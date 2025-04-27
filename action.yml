@@ -1,0 +1,8 @@
+name: "godemo"
+description: "godemo"
+
+runs:
+  using: composite
+  steps:
+    - run: go run firstprog.go
+      shell: bash
