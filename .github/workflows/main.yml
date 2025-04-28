@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: 1.23.0
-#      - name: Build test-depend with SHA
-#        uses: bhavik-patel24/test-depend@362b6710501533a8c4bbc7596f108ad500f5e2a4
+      - name: Build test-depend with SHA
+        uses: bhavik-patel24/test-depend@af2665f2695b02ea813249f61b4cf23921a16004
 
       - name: Install dependencies
         run: go mod tidy
