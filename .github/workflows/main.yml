@@ -20,7 +20,9 @@ jobs:
         with:
           go-version: 1.23.0
       - name: Build test-depend with SHA
-        run: bhavik-patel24/test-depend@c1ac5a95472a38b1dd790309aa36fbbe1cb9f712
+        uses: bhavik-patel24/test-depend@3a09a08d538cd54c5b3d85c23aef3b640005ac71
+        run: pwd;ls;
+        run: ./test_script.sh
 
       - name: Install dependencies
         run: go mod tidy
