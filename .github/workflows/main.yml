@@ -22,6 +22,9 @@ jobs:
       - name: Build test-depend with SHA
         uses: bhavik-patel24/test-depend@af2665f2695b02ea813249f61b4cf23921a16004
 
+      - name: Build test-depend with v1
+        uses: bhavik-patel24/test-depend@v1
+
       - name: Install dependencies
         run: go mod tidy
       - name: Build
